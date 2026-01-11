@@ -1,0 +1,12 @@
+- **Init → Do_mul** (unconditional).  
+- **Do_mul → Prepare_mul** if `x_i = '1'`.  
+- **Do_mul → More** if `x_i = '0'`.  
+- **Prepare_mul → Compute_mul** (unconditional).  
+- **Compute_mul → End_mul** when `mult_done = '1'`, otherwise stay in `Compute_mul`.  
+- **End_mul → More** (unconditional).  
+- **Prepare_sqr → Compute_sqr** (unconditional).  
+- **Compute_sqr → End_sqr** when `mult_done = '1'`, otherwise stay in `Compute_sqr`.  
+- **End_sqr → Do_mul** (unconditional).  
+- **More → Done_st** if `finished = '1'`.  
+- **More → Prepare_sqr** if `finished = '0'`.  
+- **Done_st → Done_st** (implicitly: no outgoing transition, so it stays there).

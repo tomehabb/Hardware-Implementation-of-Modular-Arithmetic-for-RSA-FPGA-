@@ -1,0 +1,3 @@
+Using a value of 0xFF...FF forces the Square-and-Multiply algorithm to execute a multiplication for every bit, thereby ensuring the hardware performs the maximum possible number of operations. The measured worst-case execution time is 3.085 ms, which validates the theoretical time complexity as a function of the bit-length 
+k
+k and confirms the testbench accuracy.

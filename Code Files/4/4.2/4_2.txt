@@ -1,0 +1,27 @@
+Recovered Private Keys
+The attack successfully identified 11 distinct private keys that map the plaintext 1000 to the ciphertext 12486. The keys are spaced at regular intervals (every 0x1900 or 6400 values):
+
+0x0003
+
+0x1903
+
+0x3203
+
+0x4B03
+
+0x6403
+
+0x7D03
+
+0x9603
+
+0xAF03
+
+0xC803
+
+0xE103
+
+0xFA03
+
+Timing Analysis
+With your measured speed of ~0.59 seconds per key, the full brute-force scan of the 16-bit keyspace (65,536 values) takes approximately 6.5 seconds to complete. This indicates a very efficient hardware implementation, significantly faster than the single worst-case timing would suggest.
